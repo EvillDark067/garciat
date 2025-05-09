@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Garcia Transportes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC01fG8v4Ls5kv7M5GF9rlGJTWWXM6VA4M&callback=initMap"></script>
+    <script src="map.js"></script>
+
+ 
+  </head>
+  <body>
+    <div class="header">  
+        <div id="logo">
+            <img src="gt3.png" width="60px">
+        </div> 
+
+           <!-- div da barra de opções -->
+        <ul class="menu">
+            <li><a href="horarios.html">PARCERIAS </a></li>
+            <li><a href="veiculos.html">VEICULOS </a></li>
+            <li><a href="horarios.html">HORARIOS </a></li>
+        </ul>
+    </div>
+    <div class="main_logo">
+        <img src="gt10.png" width="500px">
+    </div>
+     <!-- inicio tela de login  -->
+     <div class="logo">LOGIN DO USUARIO</div>
+     <div class="container">
+		
+		<div class="login">
+			<form>
+				<input type="text" placeholder="Usuário">
+				<input type="password" placeholder="Senha">
+				<input type="submit" value="Entrar">
+			</form>
+		</div>
+	</div>
+
+    
+    <!-- animação do taxi  -->
+    <div class="bloco">
+            <img src="tax.png" alt="">
+        </div>    
+    </div>
+    <hr>
+    <div id="map"></div>
+
+    <div>   <center><button onclick="initMap()">Minha Localização</button></center>
+    </div>
+
+   
+  </body>
+</html>
