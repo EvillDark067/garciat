@@ -24,7 +24,7 @@ body{
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: center;
     font-weight: bold;
     padding: 8px;
@@ -131,12 +131,12 @@ body{
     
    }
    .bloco img{
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
    }
    .bloco img:hover {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    transform: scale(2.2);
    }
 @keyframes bloco-animation {
     from{
@@ -178,54 +178,56 @@ button{
     
 }
 
-.login {
-    
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    padding: 40px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-.login input[type="text"], .login input[type="password"] {
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 100%;
-    border: none;
-    border-radius: 3px;
-    background-color: #fafafa;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    color: #262626;
-}
-
-.login input[type="submit"] {
-    background-color: #0095f6;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
-}
-
-.login input[type="submit"]:hover {
-    background-color: #017ff5;
-}
-
-.login p {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #0c0c0c;
-    text-align: center;
-}
 .logo{
     color: #D5D5D6;
     margin-left: 350px;
     
 }
+
+.content {
+  flex: 1;
+  flex-direction:row;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 20px 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 220px;
+  max-width: 950px;
+  margin: auto;
+}
+
+.footer-section h3 {
+color: #f1c40f;
+}
+
+.number1{
+    
+}
+.footer-section a {
+  color: #e4e0e0;
+  rgb(189, 27, 27)
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
