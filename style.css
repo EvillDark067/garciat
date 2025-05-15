@@ -27,13 +27,20 @@ body{
     justify-content: center;
     flex-direction: center;
     font-weight: bold;
-    padding: 8px;
+    padding: 5px;
 }
 .header div:hover{
     border: 10px solid rgb(0, 0, 0);
     transform: scale(1.5); 
 }
-
+.hero-section {
+  display: flex;
+  align-items: center;         /* Centraliza verticalmente */
+  justify-content: center;     /* Centraliza horizontalmente */
+  gap: 180px;                   /* Espaço entre imagem e texto */
+  padding: 60px 40px;
+  flex-wrap: wrap;             /* Se a tela for pequena, quebra em duas linhas */
+}
 .menu{
     display: flex;
     align-items: center;
@@ -43,6 +50,14 @@ body{
     height: 70px;
     width: 100%;
     padding: 0 40px;
+    
+}
+
+.text {
+    max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
     
 }
 
@@ -123,9 +138,9 @@ body{
    }
    .bloco {
     position: absolute;
-    width: 200px;
+    width: 130px;
     margin-bottom: 1px;
-    animation: bloco-animation 4s infinite;
+    animation: bloco-animation 10s infinite;
     padding: 3px;
 
     
@@ -135,8 +150,8 @@ body{
     transition: all 0.3s ease;
    }
    .bloco img:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(2.2);
+    -webkit-transform: scale(0.1);
+    transform: scale(1.3);
    }
 @keyframes bloco-animation {
     from{
@@ -145,14 +160,9 @@ body{
     to{
         right: 100%;
     }
-    /* MAPA DO GOOGLE */
+    
 }
-#map {
-    height: 400px;
-    width: 80%;
-    margin-left: 10%;
-    float: inline-end;
-  }
+
 
 button{
     background-color: rgb(255, 255, 255);
@@ -166,7 +176,6 @@ button{
     margin-bottom: 100px;
   }
 
-  /* INICIO DA TELA DE LOGIN DO USER */
 
 .container {
     display: flex;
@@ -225,9 +234,9 @@ color: #f1c40f;
 
 .footer-bottom {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
   border-top: 1px solid #444;
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 14px;
 }
 
