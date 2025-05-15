@@ -132,7 +132,7 @@ body{
     flex-grow: 0;
  }
 
- /* animação da imagem tax.png */
+ /* animação da imagem tax.png 
  img{
     max-width: 100%;
    }
@@ -144,7 +144,7 @@ body{
     padding: 3px;
 
     
-   }
+   }*/
    .bloco img{
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
